@@ -1,0 +1,97 @@
+page{
+  background-color: #fff;
+}
+.title {
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  width: 70%;
+  margin-left: 15%;
+  position: fixed;
+  top: 10%;
+}
+
+.button {
+  font-size: 16px;
+  margin-left: 10%;
+  width: 80%;
+  background-color: #d4237a;
+  color: #fff;
+  position: fixed;
+  bottom: 100rpx;
+  text-align: center;
+  height: 85rpx;
+  line-height: 85rpx;
+  border-radius: 10rpx;
+}
+
+.number {
+  color: #d4237a;
+  position: fixed;
+  bottom: 10%;
+  font-size: 80px;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}
+.musicView {
+  width: 100rpx;
+  position: fixed;
+  right: 10rpx;
+  top: 10rpx;
+}
+
+.musicImg {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.music_icon {
+  animation: musicRotate 3s linear infinite;
+}
+
+.music_play {
+  width: 28rpx;
+  height: 60rpx;
+  margin-left: -5px;
+  transform-origin: top;
+  -webkit-transform: rotate(20deg);
+}
+
+.playImg {
+  animation: musicStop 1s linear forwards;
+}
+
+.pauseImg {
+  animation: musicStart 1s linear forwards;
+}
+
+@-webkit-keyframes musicRotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes musicStop {
+  from {
+    -webkit-transform: rotate(20deg);
+  }
+
+  to {
+    -webkit-transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes musicStart {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(20deg);
+  }
+}

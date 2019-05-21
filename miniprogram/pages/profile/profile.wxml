@@ -1,0 +1,19 @@
+
+<!--pages/invite/invite.wxml-->
+<loading loadingState="{{loadingState}}" bindreload="reload" wx:if="{{loadingState != 1}}"></loading>
+<view wx:else class='pageStyle'>
+  <view class='profile'>
+    <view class="profile-img">
+      <open-data type="userAvatarUrl" ></open-data>
+    </view>
+    <open-data type="userNickName" class="profile-name"></open-data>
+  </view>
+  <view class='inviteView'>
+    <image class='backImage' src='{{pageData.backimageurl}}' mode='widthFix'></image>
+    <text class='titlename'>【{{pageData.names}}】</text>
+    <text class='msgtext'>谨定于 {{pageData.rq1}}</text>
+    <text class='msgtext'>农历 {{pageData.rq2}} 举办婚礼</text>
+    <text class='msgtext'>地址：{{pageData.address}}</text>
+    <text class='msgtext'>恭请您的光临</text>
+  </view>
+</view>

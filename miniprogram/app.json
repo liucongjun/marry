@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/pics/pics",
+    "pages/address/address",
+    "pages/profile/profile"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#E54847",
+    "navigationBarTitleText": "甜甜的婚礼",
+    "navigationBarTextStyle": "white"
+  },
+  "usingComponents": {
+    "loading": "component/loadView/index"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#E54847",
+    "list": [
+      {
+        "pagePath": "pages/pics/pics",
+        "text": "照片",
+        "iconPath": "images/index_pic.png",
+        "selectedIconPath": "images/index_pic_c.png"
+      },
+      {
+        "pagePath": "pages/address/address",
+        "iconPath": "images/index_address.png",
+        "selectedIconPath": "images/index_address_c.png",
+        "text": "导航前往"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的请柬",
+        "iconPath": "images/index_invite.png",
+        "selectedIconPath": "images/index_invite_c.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

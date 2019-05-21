@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<loading loadingState="{{loadingState}}" bindreload="reload" wx:if="{{loadingState != 1}}"></loading>
+<view wx:else>
+  <wave></wave>
+  <view class='title'>{{showTitle}}</view>
+  <view wx:if="{{isPlayingMusic}}">
+
+    <view class="musicView" bindtap="play">
+      <image src="../../images/music_icon.png" class="musicImg music_icon" />
+      <image src="../../images/music_play.png" class="music_play pauseImg" />
+    </view>
+  </view>
+  <view wx:else>
+    <view class="musicView" bindtap="play">
+      <image src="../../images/music_icon.png" class="musicImg" />
+      <image src="../../images/music_play.png" class="music_play playImg" />
+    </view>
+  </view>
+
+  <view class='button' bindtap='jumpIndexPage'>go to 甜甜的婚礼</view>
+  <view wx:if="{{debuguploadimg}}" class='button' bindtap="uploadimg">上传图片</view>
+</view>
