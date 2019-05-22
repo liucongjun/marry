@@ -1,15 +1,16 @@
 <!--pages/pics/pics.wxml-->
 <loading loadingState="{{loadingState}}" bindreload="reload" wx:if="{{loadingState != 1}}"></loading>
 <view wx:else class='pageStyle'>
-  <view class="haibao">
-    <swiper indicator-dots="true" indicator-color='#FFC0CB' indicator-active-color='#d4237a' autoplay='true' circular='true' interval='5000' duration='500'>
-      <block wx:for="{{images}}" wx:key="{{index}}">
-        <swiper-item>
-          <image class='imageBener' src="{{item.fileID}}"   mode='widthFix'></image>
-        </swiper-item>
-      </block>
-    </swiper>
-  </view>
+    <view class="haibao">
+        <swiper indicator-dots="true" indicator-color='#FFC0CB' indicator-active-color='#d4237a' autoplay='true'
+                circular='true' interval='3000' duration='500'>
+            <block wx:for="{{images}}" wx:key="{{index}}">
+                <swiper-item>
+                    <image class='imageBener' src="{{item.fileID}}" mode='widthFix'></image>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
     <block wx:for="{{images}}" wx:key="{{index}}">
         <view class='listStyle'>
             <image class='imageItem' src="{{item.fileID}}" mode='widthFix'></image>
@@ -19,5 +20,5 @@
             <view class='bottomView'></view>
         </view>
     </block>
-  <view class='bottomView'></view>
+    <view class='bottomView'></view>
 </view>

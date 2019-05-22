@@ -48,7 +48,8 @@ Page({
 
   onLoad: function() {
     that = this
-    that.getStartTitle()
+    that.getStartTitle();
+
   },
 
   /**
@@ -80,6 +81,16 @@ Page({
         isPlayingMusic: true
       })
       innerAudioContext.play();
+    }
+  },
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function() {
+    return {
+      title: "这个结婚创意小程序真好",
+      desc: '前端er的浪漫你不懂!',
+      path: '/pages/index/index'
     }
   },
   /**

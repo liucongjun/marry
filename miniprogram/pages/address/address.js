@@ -21,7 +21,17 @@ Page({
       height: 40
     }],
   },
+  linkHe () {
+    wx.makePhoneCall({
+      phoneNumber: '17512530080'
+    })
+  },
 
+  linkShe () {
+    wx.makePhoneCall({
+      phoneNumber: '16651617306'
+    })
+  },
   /**
    * 获取页面数据
    */
@@ -39,7 +49,7 @@ Page({
             longitude: res.data[0].longitude,
             markers: marks
           })
-          that.go()
+
         } else {
           that.setData({
             loadingState: 3
@@ -101,6 +111,9 @@ Page({
   onLoad: function(options) {
     that = this
     that.getPageData()
+    wx.setNavigationBarTitle({
+      title: '导航',
+    })
   },
 
   /**
@@ -149,6 +162,10 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function() {
-
+    return {
+      title: "这个结婚创意小程序真好",
+      desc: '前端er的浪漫你不懂!',
+      path: '/pages/index/index'
+    }
   }
 })

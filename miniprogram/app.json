@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/pics/pics",
     "pages/address/address",
-    "pages/profile/profile"
+    "pages/profile/profile",
+    "pages/message/message"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -24,6 +25,12 @@
     "selectedColor": "#E54847",
     "list": [
       {
+        "pagePath": "pages/index/index",
+        "text": "心语",
+        "iconPath": "images/index_like.png",
+        "selectedIconPath": "images/index_like_c.png"
+      },
+      {
         "pagePath": "pages/pics/pics",
         "text": "照片",
         "iconPath": "images/index_pic.png",
@@ -33,15 +40,25 @@
         "pagePath": "pages/address/address",
         "iconPath": "images/index_address.png",
         "selectedIconPath": "images/index_address_c.png",
-        "text": "导航前往"
+        "text": "导航"
       },
       {
         "pagePath": "pages/profile/profile",
-        "text": "我的请柬",
+        "text": "邀请函",
         "iconPath": "images/index_invite.png",
         "selectedIconPath": "images/index_invite_c.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "iconPath": "images/index_fq.png",
+        "selectedIconPath": "images/index_fq_c.png",
+        "text": "留言祝福"
       }
     ]
   },
+  "requiredBackgroundModes": [
+    "audio"
+  ],
+  "cloud": true,
   "sitemapLocation": "sitemap.json"
 }

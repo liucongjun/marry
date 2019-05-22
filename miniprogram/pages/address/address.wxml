@@ -3,3 +3,15 @@
 <view wx:else class='pageStyle'>
   <map class='mapStyle' id="map" longitude="{{longitude}}" latitude="{{latitude}}" markers="{{markers}}" scale="18" show-location bindmarkertap="markertap" subkey="46FBZ-OZ33J-YQTFQ-KON2G-MXDJ6-RLBN6"></map>
 </view>
+
+<image class="footer" src="../../images/grren-flower-line.png"/>
+<div class="call">
+  <div class="left" bindtap="linkHe">
+    <image src="../../images/he.png"/>
+    <span>呼叫新郎</span>
+  </div>
+  <div class="right" bindtap="linkShe">
+    <image src="../../images/she.png"/>
+    <span>呼叫新娘</span>
+  </div>
+</div>

@@ -1,13 +1,16 @@
 {
 	"miniprogramRoot": "miniprogram/",
+	"cloudfunctionRoot": "miniprogram/functions/",
 	"setting": {
 		"urlCheck": true,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
 		"newFeature": true,
+		"nodeModules": true,
 		"autoAudits": false,
-		"nodeModules": true
+		"uglifyFileName": false,
+		"checkInvalidKey": true
 	},
 	"appid": "wx13e3465c890dc337",
 	"projectname": "Marry",
@@ -31,18 +34,19 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 2,
+			"current": 0,
 			"list": [
 				{
-					"id": -1,
-					"name": "db guide",
-					"pathName": "pages/databaseGuide/databaseGuide",
-					"query": ""
+					"id": 0,
+					"name": "pics",
+					"pathName": "pages/pics/pics",
+					"query": "",
+					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "comment",
-					"pathName": "pages/comment/comment",
+					"id": 1,
+					"name": "address",
+					"pathName": "pages/address/address",
 					"query": "movieid=30334073",
 					"scene": null
 				},
